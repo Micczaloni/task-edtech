@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #005abe;
+  --color-brand-800: #004898;
+  --color-text: #1a1f25;
+  --color-surface: #ffffff;
+  --color-surface-soft: #e6efff;
+  --color-error: #dc2626;
+
+  --font-silka: "Silka", sans-serif;
+  --font-halcom: "Halcom", sans-serif;
+
+  --animate-drop-reject: drop-reject 0.35s ease-in-out;
+}
+
+@keyframes drop-reject {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  20% {
+    transform: translateX(-10px);
+  }
+
+  40% {
+    transform: translateX(10px);
+  }
+
+  60% {
+    transform: translateX(-7px);
+  }
+
+  80% {
+    transform: translateX(7px);
+  }
+}
